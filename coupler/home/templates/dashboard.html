@@ -1,0 +1,266 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+      <link rel="icon" href="{% static '/images/COUPLER-modified.png' %}" type="image/png">
+
+    <title>COUPLER</title>
+</head>
+{% load static %} 
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+
+           
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        <div class="title">COUPLER</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div class="title">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/profile">
+                        <i class="fas fa-user"></i>
+                        <div class="title">View Profile</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                        <div class="title">Matches</div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bell"></i>
+                        <div class="title">Notifications</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="title">Messages</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div class="title">Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        <div class="title">Help</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" name="search" placeholder="Lets Search Your Perfect Partner">
+                    <label for="search"><i class="fas fa-search"></i></label>
+                </div>
+                <i class="fas fa-bell"></i>
+                <div class="user">
+                    <img src="{% static '/images/COUPLER-modified.png' %}" alt="">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">5</div>
+                        <div class="card-name">Matches</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="far fa-random"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1</div>
+                        <div class="card-name">Interest Sent</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-arrow-alt-circle-up"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">8</div>
+                        <div class="card-name">Recieved Interests</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="far fa-handshake"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">2</div>
+                        <div class="card-name">Declined Interests</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="far fa-window-close"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tables">
+                <div class="last-appointments">
+                    <div class="heading">
+                        <h2>Recent Matches</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="appointments">
+                        <thead>
+                            <td>Name</td>
+                            <td>Age</td>
+                            <td>Interests</td>
+                            <td>View/Edit</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>1</td>
+                                <td>ABCD</td>
+                                <td>
+                                    <i class="far fa-eye"></i>
+                                    <i class="far fa-edit"></i>
+                                    <i class="far fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>KJG</td>
+                                <td>55</td>
+                                <td>ABCD</td>
+                                <td>
+                                    <i class="far fa-eye"></i>
+                                    <i class="far fa-edit"></i>
+                                    <i class="far fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>B </td>
+                                <td>2</td>
+                                <td>ABCD</td>
+                                <td>
+                                    <i class="far fa-eye"></i>
+                                    <i class="far fa-edit"></i>
+                                    <i class="far fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>3</td>
+                                <td>ABCD</td>
+                                <td>
+                                    <i class="far fa-eye"></i>
+                                    <i class="far fa-edit"></i>
+                                    <i class="far fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>D </td>
+                                <td>4</td>
+                                <td>ABCD</td>
+                                <td>
+                                    <i class="far fa-eye"></i>
+                                    <i class="far fa-edit"></i>
+                                    <i class="far fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E</td>
+                                <td>5</td>
+                                <td>ABCD</td>
+                                <td>
+                                    <i class="far fa-eye"></i>
+                                    <i class="far fa-edit"></i>
+                                    <i class="far fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="doctor-visiting">
+                    <div class="heading">
+                        <h2>Suggested Matches</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="visiting">
+                        <thead>
+                            <td>Photo</td>
+                            <td>Name</td>
+                            <td>Age</td>
+                            <td>Detail</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                        <img src="doctor1.png" alt="">
+                                    </div>
+                                </td>
+                                <td>A</td>
+                                <td>1</td>
+                                <td><i class="far fa-eye"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                        <img src="doctor3.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>B</td>
+                                <td>2</td>
+                                <td><i class="far fa-eye"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                        <img src="doctor2.png" alt="">
+                                    </div>
+                                </td>
+                                <td>C</td>
+                                <td>3</td>
+                                <td><i class="far fa-eye"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                        <img src="doctor4.png" alt="">
+                                    </div>
+                                </td>
+                                <td>D</td>
+                                <td>4</td>
+                                <td><i class="far fa-eye"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUPLER</title>
+    <link rel="stylesheet" href="{% static '/css/signup.css' %}">
+
+
+  <link rel="icon" href="images/COUPLER-modified.png" type="image/png">
+  <link rel="icon" href="{% static '/images/COUPLER-modified.png' %}" type="image/png">
+
+  {% load static %}
+
+</head>
+<body>
+    
+
+    <video id="background-video" autoplay muted loop poster="video/bg.mp4">
+        <source src="video/bg.mp4" type="video/mp4">
+        <source src="{% static '/video/bg-1.mp4' %}" type="video/mp4">
+
+
+        </video>
+    
+
+
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+
+                <div class="header">
+                    <a></a>
+                 <a href="#default" class="logo"><img src="{% static '/images/COUPLER-modified.png' %}" height="200px" width="200px"></a>	
+                </div>
+
+                <form class="login" action="/signup" method="POST" enctype="multipart/form-data" >
+                        {%  csrf_token %}
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" id="username" name="username" class="login__input" placeholder="Name" required>
+                    </div>
+                  
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text"  id="email" name="email" class="login__input" placeholder="Email" required>
+                    </div>
+
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" id="password" name="password" class="login__input" placeholder="Password" required>
+                    </div>
+
+                    <button class="button login__submit" type="submit">
+                        <span class="button__text">SIGNUP</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>                  
+                    
+                </form>
+
+                <div class="social-login">
+                    <h3></h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-login__icon fab fa-instagram"></a>
+                        <a href="#" class="social-login__icon fab fa-facebook"></a>
+                        <a href="#" class="social-login__icon fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+
+
+
+</body>
+</html>
