@@ -44,7 +44,7 @@ def login(request):
                 global val
                 def val():
                     return username
-                return redirect('dashboard')
+                return render(request,"dashboard.html")
         if flag==0:
             messages.error(request,"Bad Credentials")
             return redirect('home')
@@ -160,6 +160,11 @@ def profile(request):
     for i in user_profile:
         if username==i.username:
             break
-    return render(request,'profile.html',{'i':i})
+
+    user_details=Detaila.objects.all()
+    for j in user_details:
+        if username==j.username:
+            break
+    return render(request,'profile.html',{'i':i,'j':j})
 
 

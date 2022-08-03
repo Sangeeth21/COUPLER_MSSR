@@ -54,10 +54,10 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>HOME</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>ABOUT</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>MORE ABOUT ME</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>POSTS</span></a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -82,12 +82,7 @@
         <div class="section-title">
           <h2>About</h2>
           <p>
-            Section 1
-                Sometimes, help comes in the most unexpected places. After my coming out experience, I became eternally grateful for the amount of support and empathy that was given to me by both my friends and my family. Although I lost quite a few friends and acquaintances in the process, the rewards of self-confidence and seeing the sincerity in the relationships that I had with the people in my life made the entire experience worth it in the end.
-                
-                I always knew I was different from the other boys on the playground but I never thought homosexuality was a bad thing -- my father always told me that being different was being different and nothing more than that. In elementary school, I would go around and tell boys and girls that I had crushes on them and nobody thought anything of the antics, I felt reassured that being different was acceptable.
-                
-                In Junior High school however, everything seemed to change. All of a sudden the boys were expected to wear a certain style of clothes, act a certain way, and treat girls in a particular manner. I remember being extremely confused but also confident in my differences from these boys but as the years progressed, it became more and more difficult. Being a boy scout and hearing horror stories of homosexuals being "outed" and expelled from the organization instilled a sense of fear and confidentiality with my blooming sexual urges; I began to conform to the gender stereotypes of hyper-masculinity. I remember I started to skateboard and play basketball like a "typical pre-teenager." I started to dress differently. I changed my hairstyle. I started talking more like a "guy."
+            {{j.describeu}}
           </p>
         </div>
 
@@ -111,10 +106,14 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Qualifications:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Mail id:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Occupation:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{j.age}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Qualifications:</strong> <span>{{j.qualification}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Mail id:</strong> <span>{{i.email}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Occupation:</strong> <span>{{i.job}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Country:</strong> <span>{{i.job}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>State:</strong> <span>{{j.state}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>{{j.city}}</span></li>
+
                 </ul>
               </div>
             </div>
@@ -130,7 +129,7 @@
 
         <div class="section-title">
           <h2>Hobbies and interests</h2>
-          <p>I have very weird hobbies</p>
+          <p>{{j.hobbiesandinterest}}</p>
         </div>
 
         <div class="row no-gutters">
@@ -138,32 +137,28 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Fooding</strong> abcd</p>
+              <p><strong>Fooding</strong> </p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Travel</strong> abcd</p>
+              <p><strong>Travel</strong> </p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="count-box">
               <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Entertainment</strong> abcd</p>
+              <p><strong>Entertainment</strong> </p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="count-box">
               <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Reading</strong>abcd</p>
+              <p><strong>Reading</strong></p>
             </div>
           </div>
 
@@ -186,50 +181,41 @@
             <div class="resume-item pb-0">
               <h4>Family</h4>
               <ul>
-                <li>Family Type: Nuclear Family</li>
-                <li>Family Values: Moderate Family</li>
-                <li>Status: Middle Class Family</li>
-                <li><p>I live in mumbai with my younger brother and sister.My parents live in chennai And are retired.We have our own apartment near chennai.my brother is software professional and is sister is a doctor</p></li>
+                <li>Family Type: {{j.familytype}}</li>
+                <li>Family Values: {{j.familyvalues}} </li>
+                <li>Family Status: {{j.familystatus}}</li>
+                <li>Marital Status: {{j.maritalstatus}}</li>
+
+                <li><p></p></li>
 
               </ul>
             </div>
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+              <h4>{{j.education}}</h4>
             </div>
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+              <h4>#</h4>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4>{{j.professionalexp}}</h4>
+              
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+               
+                <li></li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4>About your family</h4>
+              <h5>{{j.describeurfamily}}</h5>
+              
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                
+                <li></li>
               </ul>
             </div>
           </div>
@@ -253,9 +239,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static '/images/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+              <img src="{{i.image.url}}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static '/images/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{{i.image.url}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -263,9 +249,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{% static '/images/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+              <img src="" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static '/images/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -273,9 +259,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static '/images/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+              <img src="" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static '/images/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -283,9 +269,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="{% static '/images/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+              <img src="" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static '/images/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -293,9 +279,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{% static '/images/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+              <img src="" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static '/images/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -303,9 +289,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static '/images/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+              <img src="" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static '/images/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -313,9 +299,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="{% static '/images/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+              <img src="" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static '/images/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
                 <a href="" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -323,9 +309,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="{% static '/images/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+              <img src="" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static '/images/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
                 <a href="" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -333,9 +319,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{% static '/images/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+              <img src="" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static '/images/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
