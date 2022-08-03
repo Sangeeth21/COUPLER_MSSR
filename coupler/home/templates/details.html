@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 {% load static %} 
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="css/details.css">
     <link rel="stylesheet" href="{% static '/css/details.css' %}">
-    <link rel="stylesheet" href="{% static '/css/details.js' %}">
 
      
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -19,6 +18,15 @@
 {% load static %} 
 
 <body>
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <label  id="mm"><center><strong><b>Message:</strong>{{ message }}</b></center></label>
+    
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    {% endfor %}
+
     <div class="container">
         <header><span>CO</span>U <span>PLE</span>R   Registration</header>
 
@@ -51,7 +59,14 @@
 
                         <div class="input-field">
                             <label>Select Role</label>
-                            <input type="text" id="role" name="role" placeholder="Enter Role" required>
+                            <select id="role" name="role" required>
+                                <option  disabled selected>Select Role</option>
+                                <option>Lesbian</option>
+                                <option>Gay</option>
+                                <option>Transgender</option>
+                                <option>Bisexual</option>
+                            </select>
+
 
                         </div>
 
@@ -71,8 +86,11 @@
                     
                         <div class="input-field">
                             <label>Address Type</label>
-                            <input type="text" id="addtype" name="addtype" placeholder="Permanent/Temporary" required>
-
+                            <select id="addtype" name="addtype" required>
+                                <option  disabled selected>Select Address Type</option>
+                                <option>Permanent</option>
+                                <option>Temporary</option>
+                            </select>
                         </div>
 
                         
@@ -85,7 +103,11 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>ID Type</label>
-                            <input type="text" id="idtype"  name="idtype" placeholder="Aadhar/Other" required>
+                            <select id="idtype" name="idtype" required>
+                                <option  disabled selected>Select ID Type</option>
+                                <option>Aadhar</option>
+                                <option>Other</option>
+                            </select>
                         </div>
 
                         <div class="input-field">
@@ -103,7 +125,7 @@
                             <input type="file" id="image" name="image" placeholder="Upload your Image" required>
                         </div>
                         <button class="sumbit">
-                            <span class="btnText">Submit</span>
+                            <span class="btnText">NEXT</span>
                             <i class="uil uil-navigator"></i>
                         </button>
 
@@ -125,16 +147,3 @@
 
 </body>
 </html>
-
-
-
-
-
-<!--<select required>
-    <option disabled selected>Select ID Type</option>
-    <option>Aadhaar</option>
-    <option>Driving License</option>
-    <option>Other</option></select>  -->
-    
-
-    

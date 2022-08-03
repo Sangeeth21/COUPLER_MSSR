@@ -1,0 +1,197 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="details1.css">
+    <link rel="stylesheet" href="{% static '/css/details1.css' %}">
+    <link rel="stylesheet" href="{% static '/css/details1.js' %}">
+
+     
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+{% load static %} 
+
+<body>
+
+    <div class="container">
+        <header><span>CO</span>U <span>PLE</span>R   Registration</header>
+
+        <form action="/detaila"  method="POST" enctype="multipart/form-data">
+            {%  csrf_token %}
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Let your partner know you!</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Describe You</label>
+                            <input type="text" id="describeu" name="describeu" placeholder="Describe yourself" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="number" id="age" name="age" placeholder="Enter your Age" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Qualification</label>
+                            <input type="text" id="qualification" name="qualification" placeholder="Enter your Qualification" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Education</label>
+                            <input type="text" id="eduaction" name="education" placeholder="Enter your Education details" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Professional Experience</label>
+                            <input type="text" id="professionalexp" name="professionalexp" placeholder="Enter your Experience" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother Tongue</label>
+                            <input type="text" id="mothertongue" name="mothertongue" placeholder="Enter your Mother Tongue" required>
+                        </div>
+                       
+                        <div class="input-field">
+                            <label>Describe Your Family</label>
+                            <input type="text" id="describeurfamily" name="describeurfamily" placeholder="Describe your family" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Family Type</label>
+                            <select  id="familytype" name="familytype" required>
+                                <option  disabled selected>Select family type</option>
+                                <option >Nuclear</option>
+                                <option >Joint</option>
+                            </select>
+
+                        </div>
+                    
+                        <div class="input-field">
+                            <label>Family Value</label>
+                            <select id="familyvalue" name="familyvalue" required>
+                                <option  disabled selected>Select family Value</option>
+                                <option>Orthodox</option>
+                                <option>Traditional</option>
+                                <option>Moderate</option>
+                                <option>Liberal</option>
+                            </select>
+
+                        </div>
+                            
+
+                        <div class="input-field">
+                            <label>Family Status</label>
+                            <select id="familystatus" name="familystatus" required>
+                            <option  disabled selected>Select family Status</option>
+                                <option>Middle Class</option>
+                                <option>Upper Middle Class</option>
+                                <option>Rich</option>
+                                <option>Affluent</option>
+                            </select>
+
+                        </div>
+                            
+                        <div class="input-field">
+                            <label>Marital Status</label>
+                            <select id="maritalstatus" name="maritalstatus" required>
+                                <option  disabled selected>Select family Value</option>
+                                <option>Never Married</option>
+                                <option>Divorced</option>
+                                <option>Awaiting Divorce</option>
+                                <option>Widower</option>
+                            </select>
+
+                        </div>
+
+                        <div class="input-field">
+                            <label>Hobbies and Interests</label>
+                            <input type="text" id="hobbiesandinterest" name="hobbiesandinterest" placeholder="Enter your Hobbies and Interests" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Country</label>
+                            <input type="text" id="country" name="country" placeholder="Enter your Country" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" id="state" name="state" placeholder="Enter Your State" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" id="city" name="city" placeholder="Enter your City" required>
+
+                        </div>
+                   
+
+                        <button class="sumbit">
+                            <span class="btnText">NEXT</span>
+                            <i class="uil uil-navigator"></i>
+                    
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+                
+                
+
+                
+
+
+
+
+                        
+                   
+                       
+
+                        
+                        
+                       
+                       
+
+                    
+                
+            
+        
+
+
+
+
+
+    
+
+    

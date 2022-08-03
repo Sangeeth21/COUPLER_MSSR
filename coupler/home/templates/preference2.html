@@ -1,0 +1,142 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="preference.css">
+    <link rel="stylesheet" href="{% static '/css/preference2.css' %}">
+
+     
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+{% load static %} 
+
+<body>
+    <div class="container">
+        <header><span>Select Your Preference</header>
+
+        <form action="/preference2"  method="POST" enctype="multipart/form-data">
+            {%  csrf_token %}
+
+            <div class="form first">
+                <div class="details personal">
+                    <p id="description">
+                        Please fill this up according to your choices.This may help you to to find your partner which suits with your own choices.
+                    </p>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label> 6. Did you value social committment ?</label>
+                            <select id="socialcom" name="socialcom" required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                            <label> 7. Are you ready to value your partner's talents ?</label>
+                            <select  id="partnertalent" name="partnertalent" required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                            <label> 8.  Are you ready to let Your partner to live independently ?</label>
+                            <select id="partnerindep" name="partnerindep"   required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                            <label> 9. Do you feel comfortable with a drinking or smoking person ?</label>
+                            <select id="drinkorsmoke" name="drinkorsmoke"  required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                            <label> 10. Do you mind if I hangout with my friends ?</label>
+                            <select  id="hangout" name="hangout" required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                
+
+
+                        
+
+                        </div>
+
+                        
+                
+                   
+
+                        <button class="submit">
+                            <span class="btnText">submit</span>
+                            <i class="uil uil-navigator"></i>
+                    
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+                
+                
+
+                
+
+
+
+
+                        
+                   
+                       
+
+                        
+                        
+                       
+                       
+
+                    
+                
+            
+        
+
+
+
+
+
+    
+
+    
