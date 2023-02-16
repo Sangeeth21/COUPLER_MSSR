@@ -1,7 +1,7 @@
 from email import message
 from django.shortcuts import render,redirect
 from django.contrib import messages
-from .models import  Preference1,Preference2,Signup, Detail ,Detaila
+from .models import Social,Post,Blog, Preference1,Preference2,Signup, Detail ,Detaila
 
 # Create your views here.
 
@@ -166,5 +166,60 @@ def profile(request):
         if username==j.username:
             break
     return render(request,'profile.html',{'i':i,'j':j})
+
+
+
+def blog(request):
+    return render(request,'blog.html')
+
+def blogcontact(request):
+    if request.method=="POST":
+        name=request.POST['name']
+        email=request.POST['email']
+        phno=request.POST['phno']
+        message=request.POST['message']
+
+        username=val()
+        blogdet=Blog(usrname=username,name=name,email=email,phno=phno,message=message)
+        blogdet.save()
+        messages.success(request,"Query sent successfully")
+        return render(request,'/blog')
+    return render(request,'blog_contact.html')
+
+def blogpost(request):
+    if request.method=="POST":
+        posts=request.POST['posts']
+
+        user=val()
+
+        postdet=Post(username=user,posts=posts)
+        postdet.save()
+    return render(request,'blog_post.html')
+
+
+def blogabout(request):
+    return render(request,'blog_about.html')
+
+def match(request):
+    return render(request,'match.html')
+
+def social(request):
+    if request.method=="POST":
+        instagram=request.POST['instagram']
+        fb=request.POST['fb']
+        twitter=request.POST['twitter']
+
+        users=val()
+
+        socials=Social(username=users,instagram=instagram,fb=fb,twitter=twitter)
+        socials.save()
+    messages.success(request,"Details added successfully")   
+    return render(request,'social.html')
+
+def matchs(request):
+    matching=Detail.objects.all()
+    matching2=Preference1.objects.all()
+    username=val()
+    
 
 

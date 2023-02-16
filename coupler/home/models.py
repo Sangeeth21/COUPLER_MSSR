@@ -1,3 +1,4 @@
+from unittest.util import _MAX_LENGTH
 from django.db import models
 from matplotlib import image
 
@@ -59,5 +60,26 @@ class Preference2(models.Model):
     partnerindep=models.CharField(max_length=20)
     drinkorsmoke=models.CharField(max_length=20)
     hangout=models.CharField(max_length=20)
+
+class Blog(models.Model):
+    username=models.CharField(max_length=20)
+    email=models.EmailField(max_length=20)
+    phno=models.CharField(max_length=10)
+    message=models.CharField(max_length=10000)
+
+class Post(models.Model):
+    username=models.CharField(max_length=20)
+    post=models.CharField(max_length=1000)
+    
+
+class Social(models.Model):
+    username=models.CharField(max_length=200)
+    instagram=models.CharField(max_length=100)
+    fb=models.CharField(max_length=100)
+    twitter=models.CharField(max_length=100)
+
+
+
+
 
 

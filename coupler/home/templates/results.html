@@ -1,0 +1,143 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="preference.css">
+    <link rel="stylesheet" href="{% static '/css/results.css' %}">
+
+     
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+{% load static %} 
+
+<body>
+
+    <div class="container">
+        <header><span>Select Your Preference</header>
+
+        <form action="/preference1"  method="POST" enctype="multipart/form-data">
+            {%  csrf_token %}
+            
+            <div class="form first">
+                <div class="details personal">
+                    <p id="description">
+                        Please fill this up according to your choices.This may help you to to find your partner which suits with your own choices.
+                    </p>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label> 1. Are you willing to have a personal life apart from parents ?</label>
+                            <select id="personallyf" name="personallyf" required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                            <label> 2. Are you ready to adopt a child ?</label>
+                            <select id="adoptchild" name="adoptchild" required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                            <label> 3. Are you willing to have a life with a divorcee ?</label>
+                            <select id="lifewithdiv" name="lifewithdiv" required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                            <label> 4. Are you an ambitious person ?</label>
+                            <select id="ambitious" name="ambitious" required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                            <label> 5. Are you superstitious ?</label>
+                            <select id="superstitious" name="superstitious" required>
+                                <option disabled selected>         Select       </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+
+                
+
+
+                        
+
+                        </div>
+
+                        
+                
+                   
+
+                        <button class="Next">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                    
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+                
+                
+
+                
+
+
+
+
+                        
+                   
+                       
+
+                        
+                        
+                       
+                       
+
+                    
+                
+            
+        
+
+
+
+
+
+    
+
+    
