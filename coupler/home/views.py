@@ -154,21 +154,6 @@ def preference2(request):
     return render(request, "preference2.html")
 
 
-def profile(request):
-    username=val()
-    user_profile=Detail.objects.all()
-    for i in user_profile:
-        if username==i.username:
-            break
-
-    user_details=Detaila.objects.all()
-    for j in user_details:
-        if username==j.username:
-            break
-    return render(request,'profile.html',{'i':i,'j':j})
-
-
-
 def blog(request):
     return render(request,'blog.html')
 
@@ -200,8 +185,6 @@ def blogpost(request):
 def blogabout(request):
     return render(request,'blog_about.html')
 
-def match(request):
-    return render(request,'match.html')
 
 def social(request):
     if request.method=="POST":
@@ -216,10 +199,11 @@ def social(request):
     messages.success(request,"Details added successfully")   
     return render(request,'social.html')
 
-def matchs(request):
-    matching=Detail.objects.all()
-    matching2=Preference1.objects.all()
-    username=val()
-    
+def profile_list(request):
+    profiles = Detail.objects.all()
+    return render(request, 'profiles.html', {'profiles': profiles})
 
-
+def match_list(request, username):
+    profilee=Detail.objects.get(username)
+    matches = sorted(Detail.objects.exclude(username=username), key=lambda p: profilee.compatibility_score(p), reverse=True)
+    return render(request, 'match_list.html', {'profilee': profilee, 'matches': matches})

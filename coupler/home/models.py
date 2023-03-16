@@ -25,6 +25,10 @@ class Detail(models.Model):
     idno=models.IntegerField()
     job=models.CharField(max_length=20)
     image=models.ImageField(upload_to='pictures')
+
+    def compatibilty_score(self,other_profile):
+        score = 0
+        return score
     
 class Detaila(models.Model):
     username=models.CharField(max_length=20)
@@ -77,6 +81,8 @@ class Social(models.Model):
     instagram=models.CharField(max_length=100)
     fb=models.CharField(max_length=100)
     twitter=models.CharField(max_length=100)
+
+    
 
 
 

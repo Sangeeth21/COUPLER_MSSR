@@ -1,0 +1,7 @@
+<h3>Matches for {{ profile.name }}</h3>
+{% for match in matches %}
+  <h4>{{ match.fullname }} ({{ profile.compatibility_score(match) }})</h4>
+  <p>Age: {{ match.role }}</p>
+  <p>Location: {{ match.address }}</p>
+  <p>Interests: {{ match.image }}</p>
+{% endfor %}

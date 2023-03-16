@@ -11,13 +11,12 @@ urlpatterns = [
     path('dashboard',views.dashboard, name='dashboard'),
     path('detail',views.detail, name='detail'),
     path('detaila',views.detaila, name='detaila'),
-    path('profile',views.profile, name='profile'),
     path('preference1',views.preference1, name='preference1'),
     path('preference2',views.preference2, name='preference2'),
     path('blog',views.blog, name='blog'),
     path('blogpost',views.blogpost, name='blogpost'),
     path('blogcontact',views.blogcontact, name='blogcontact'),
     path('blogabout',views.blogabout, name='blogabout'),
-    path('match',views.match,name='match'),
-
-    ] 
+    path('profile_list', views.profile_list, name='profile_list'),
+    path('match_list', views.match_list, name='match_list'),
+    ]
